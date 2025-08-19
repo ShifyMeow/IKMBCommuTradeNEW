@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:real_commutrade/screens/login_page.dart';
-import 'package:real_commutrade/screens/main_nav_page.dart'; // Import the new main navigation page
+// Note: We don't need to import main_nav_page.dart here
+// because it is only used for navigation from the login page.
 
 void main() {
   runApp(const MyApp());
@@ -16,16 +17,8 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      // This is the starting point of your application.
-      // After a user is authenticated, you would navigate to the MainNavPage.
-      // For now, we will start with the LoginPage.
+      // The application starts at the LoginPage.
       home: const LoginPage(),
-      // You can also use named routes for cleaner navigation
-      // initialRoute: '/',
-      // routes: {
-      //   '/': (context) => const LoginPage(),
-      //   '/main': (context) => const MainNavPage(),
-      // },
     );
   }
 }
