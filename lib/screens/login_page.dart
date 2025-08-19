@@ -106,6 +106,14 @@ class _LoginPageState extends State<LoginPage> {
               mainAxisAlignment: MainAxisAlignment.center,
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: <Widget>[
+                // App logo from assets folder
+                Center(
+                  child: Image.asset(
+                    'assets/CommuTrade.png', // Assuming your logo is in assets/images/logo.png
+                    height: 150,
+                  ),
+                ),
+                const SizedBox(height: 16.0),
                 const Text(
                   'CommuTrade',
                   style: TextStyle(
